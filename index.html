@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>UFO Paribahan</title>
+</head>
+
+<body class="w-full">
+    <header class="container mx-auto">
+        <!-- top header -->
+        <div class="mb-3">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Search</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl">UF-O</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn text-[#1DD100] font-bold border-1 border-[#1DD100] rounded-xl text-lg">Bus <img
+                            src="./images/bus-icon.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main header -->
+        <div class="mb-8 lg:mb-20 px-2">
+            <div class="hero lg:min-h-screen rounded-3xl" style="background-image: url(./images/banner.png);">
+                <div class="hero-overlay bg-opacity-60 rounded-3xl"></div>
+                <div class="hero-content text-center text-neutral-content">
+                    <div class="space-y-8">
+                        <h1 class="mb-5 text-4xl lg:text-6xl font-extrabold">End-to-End Travel with</h1>
+                        <p class="text-2xl mb-2 lg:text-6xl font-extrabold text-green-400">Uraal Paribahan</p>
+                        <p class="mb-5">We provide the best experience to our passengers. Wishing you the safest journey.</p>
+                        <button class="btn bg-[#1DD100] text-lg rounded-xl border-none font-bold"><a href="#buy-tickets">Buy Tickets</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="px-2">
+
+        <!-- Offer Section -->
+        <section class="mb-5 container mx-auto">
+            <h1 class="text-center text-4xl font-bold mb-7">Best offers for you</h1>
+
+            <div class="flex flex-col lg:flex-row lg:justify-around gap-8">
+                <!-- 15% -->
+                <div class="bg-[#FFBF0F] flex justify-between rounded-xl px-8 lg:w-1/2">
+                    <div class="flex flex-col justify-center w-3/5">
+                        <h2 class="font-bold text-3xl">15% OFF</h2>
+                        <h5 class="font-bold text-lg">on your next purchase</h5>
+                        <p>use by January 2024</p>
+                    </div>
+                    <div><img src="./images/cupon-devider.png" alt=""></div>
+                    <div class="flex flex-col justify-center text-center w-40">
+                        <h4 class="font-bold text-3xl">NEW15</h4>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+
+                <!-- 20% -->
+                <div class="bg-[#F78C9C] flex justify-between rounded-xl px-8 lg:w-1/2">
+                    <div class="flex flex-col justify-center w-3/5">
+                        <h2 class="font-bold text-3xl">20% OFF</h2>
+                        <h5 class="font-bold text-lg">on your next purchase</h5>
+                        <p>use by January 2024</p>
+                    </div>
+                    <div><img src="./images/cupon-devider.png" alt=""></div>
+                    <div class="flex flex-col justify-center w-40 text-center">
+                        <h4 class="font-bold text-3xl">Couple 20</h4>
+                        <p>Coupon Code</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-10 flex justify-center">
+                <button class="btn bg-white border-2 border-green-500 text-green-500 text-lg">See All Offers</button>
+            </div>
+
+        </section>
+
+        <!-- Ticket Info Section-->
+
+        <section id="buy-tickets" class="border-2 border-t-green-500 rounded-3xl mx-auto bg-[#F7F8F8] mt-12">
+            <div class="mt-10 lg:mt-32 flex flex-col items-center px-2 mb-12">
+                <h1 class="font-bold text-4xl">Uraal Paribahan</h1>
+                <p>You can buy tickets sitting at your home without any hassle. </p>
+            </div>
+
+            <!-- Ticket Info -->
+            <div class="bg-white flex flex-col lg:flex-row justify-between rounded-xl px-4 container mx-auto mb-10">
+
+                <div class="lg:w-3/4">
+                    <div class="flex lg:justify-between">
+    
+                        <div class="flex gap-4 lg:gap-6 lg:flex-row flex-col mt-10">
+                            <div>
+                                <img src="./images/bus-logo.png" alt="">
+                            </div>
+                            <div>
+                                <h2 class="font-bold  lg:text-3xl">Uraal Paribahan</h2>
+                                <p>Coach-009-WEB ! AC_Business</p>
+                            </div>
+                        </div>
+    
+                        <div class="flex gap-4 w-48 p-3 h-16 rounded-lg mt-5 bg-green-100">
+                            <img src="./images/seat-green.png" alt="" class="size-9">
+                            <p class="text-green-600 mt-1 font-bold lg:text-lg">40 Seats left</p>
+                        </div>
+                    </div>
+
+                    <div class="w-full bg-[#F7F8F8] p-6 mt-4 gap-4 rounded-lg">
+
+                        <div class="flex justify-between">
+                            <p class="text-lg">Route</p>
+                            <p class="font-bold">Dhaka - Sylhet</p>
+                        </div>
+                        <hr class="mt-3 mb-3" style="border-top: dashed 1px;">
+                        <div class="flex justify-between">
+                            <p class="text-lg">Departure Time</p>
+                            <p class="font-bold">9.00 PM</p>
+                        </div>
+                        <hr class="mt-3 mb-3" style="border-top: dashed 1px;">
+
+                        <div class="flex justify-between gap-2">
+                            <p class="bg-[#0307120C] w-52 rounded-lg text-center p-2">Boarding Point - Laxmipur</p>
+                            <p class="bg-[#0307120C] w-52 rounded-lg text-center p-2">Dropping Point - Bogura</p>
+                            <p class="bg-[#0307120C] w-52 rounded-lg text-center p-2">Est. Time - 11 Hour</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="hidden lg:block"><img src="./images/info-devider.png" alt=""></div>
+
+                <div class="flex justify-around lg:flex-col mt-10 lg:w-1/4 items-center lg:justify-center">
+                    <img src="./images/fare.png" alt="" class="size-16">
+                    <h4 class="font-bold text-3xl">550 Taka</h4>
+                    <p class="text-xl">Per Seat</p>
+                </div>
+            </div>
+
+
+            <!-- Choose Tickets -->
+            <div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
